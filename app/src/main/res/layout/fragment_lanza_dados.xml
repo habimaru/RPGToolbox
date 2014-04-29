@@ -1,0 +1,144 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="¡Lancemos dados!"
+        android:id="@+id/tituloLanzaDados"
+        android:layout_gravity="center_horizontal"
+        android:height="50dp"
+        android:textSize="30dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/button2"
+            android:onClick="menosDados"
+            android:background="@android:color/holo_red_light"
+            android:textSize="30dp"
+            android:gravity="center|center_vertical"
+            android:textStyle="bold"
+            android:layout_weight="0.00" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="1"
+            android:id="@+id/numDados"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/botonMasDados"
+            android:onClick="masDados"
+            android:background="@android:color/holo_green_light"
+            android:textSize="30dp"
+            android:gravity="center|center_vertical"
+            android:textStyle="bold"
+            android:paddingRight="0dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="dados"
+            android:id="@+id/dados"
+            android:paddingLeft="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="x"
+        android:id="@+id/cruzLanza"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="31dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/button3"
+            android:onClick="menosCaras"
+            android:background="@android:color/holo_red_light"
+            android:textSize="30dp"
+            android:gravity="center|center_vertical"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="10"
+            android:id="@+id/numCaras"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/button"
+            android:onClick="masCaras"
+            android:background="@android:color/holo_green_light"
+            android:textSize="30dp"
+            android:gravity="center|center_vertical"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="caras"
+            android:id="@+id/textoCaras"
+            android:paddingLeft="20dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:text="Tirar dados"
+        android:id="@+id/botonLanza"
+        android:layout_gravity="center_horizontal"
+        android:onClick="lanzar"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@android:color/holo_orange_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/resultadosDados"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

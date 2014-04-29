@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+
+    </style>
+
+    <style name="ratingHabi" parent="@android:style/Widget.RatingBar">
+        <item name="android:minHeight">30dip</item>
+        <item name="android:maxHeight">40dip</item>
+                <item name="android:progressDrawable">@drawable/ic_action_good</item>
+
+    </style>
+
+</resources>
